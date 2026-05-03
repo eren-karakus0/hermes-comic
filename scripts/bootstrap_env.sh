@@ -25,8 +25,8 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 
 echo "[4/5] git config (idempotent)..."
-git config --global user.email "erenkar950@gmail.com" 2>/dev/null || true
-git config --global user.name "eren-karakus0" 2>/dev/null || true
+git config --global user.email "your@email.com" 2>/dev/null || true
+git config --global user.name "your-github-username" 2>/dev/null || true
 
 echo "[5/5] verify..."
 python3.11 --version
@@ -36,6 +36,6 @@ fc-list | grep -i "noto.*cjk" | head -2 || echo "(noto-cjk fonts indexed)"
 echo ""
 echo "[done] bootstrap complete."
 echo "Next: restart shell or run \`source ~/.bashrc\`, then:"
-echo "  cd /mnt/c/Users/EREN/Desktop/nous/hermes-comic"
+echo "  cd /path/to/hermes-comic"
 echo "  uv venv --python 3.11"
 echo "  uv sync"

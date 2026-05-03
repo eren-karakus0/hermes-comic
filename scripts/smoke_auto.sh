@@ -3,7 +3,7 @@
 # Expected: ~3 min, ~$0.25
 set -euo pipefail
 
-cd /mnt/c/Users/EREN/Desktop/nous/hermes-comic
+cd "$(dirname "$0")/.." 
 export PATH="$HOME/.local/bin:$PATH"
 
 # Fresh workspace name to avoid collisions

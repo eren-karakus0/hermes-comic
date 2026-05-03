@@ -12,3 +12,7 @@ build/
 IMPLEMENTATION_SPRINT.md
 DEMO_RECORDING_SCRIPT.md
 RECORDING_TODAY.md
+smoke_neon_ash_ch1.sh
+smoke_neon_ash_full.sh
+smoke_phase2.sh
+smoke_phase3.sh

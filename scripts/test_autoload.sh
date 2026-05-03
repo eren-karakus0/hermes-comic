@@ -2,7 +2,7 @@
 # Verify comic CLI auto-loads .env without explicit sourcing.
 set -euo pipefail
 
-cd /mnt/c/Users/EREN/Desktop/nous/hermes-comic
+cd "$(dirname "$0")/.." 
 bash scripts/install_skill.sh > /dev/null 2>&1 || true
 export PATH="$HOME/.local/bin:$PATH"
 

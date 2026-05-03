@@ -20,7 +20,7 @@ Your job is the editor + art director. The tools do the heavy lifting.
 Before any commands, prepare the environment. Run these in the terminal tool:
 
 ```bash
-cd /mnt/c/Users/EREN/Desktop/nous/hermes-comic
+cd /path/to/hermes-comic
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
@@ -82,7 +82,7 @@ For each character in `character-bible.md`:
    (If using Neon & Ash or Red vs Blue presets, use those set names; otherwise you may need to adapt `scripts/gen_references.py` CHARACTERS dict — check with the user first.)
 5. Tell user to open in Windows Explorer:
    ```
-   C:\Users\EREN\Desktop\nous\hermes-comic\workspaces\<slug>\characters\<name>\_candidates\
+   <workspace>\characters\<name>\_candidates\
    ```
 6. Ask user which numbers per pose (portrait / full_body / action).
 7. Apply picks:
@@ -115,7 +115,7 @@ For each chapter (aim for 3):
    Concurrency 5 is the default — 5 panels render in parallel, ~1 min for 6-panel chapter, ~2 min for 12-panel chapter. If fal rate-limits appear, drop to `--concurrency 3`.
 7. Tell user the chapter.png path:
    ```
-   C:\Users\EREN\Desktop\nous\hermes-comic\workspaces\<slug>\chapters\<NN>\chapter.png
+   <workspace>\chapters\<NN>\chapter.png
    ```
 8. **From chapter 2 onward**, offer multimodal continuity check as flagship feature:
    ```bash

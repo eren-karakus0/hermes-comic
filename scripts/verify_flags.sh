@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd /mnt/c/Users/EREN/Desktop/nous/hermes-comic
+cd "$(dirname "$0")/.." 
 bash scripts/install_skill.sh > /dev/null 2>&1
 export PATH="$HOME/.local/bin:$PATH"
 

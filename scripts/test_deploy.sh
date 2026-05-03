@@ -2,7 +2,7 @@
 # Deploy Neon & Ash bundle to surge.sh for the first time.
 set -euo pipefail
 
-cd /mnt/c/Users/EREN/Desktop/nous/hermes-comic
+cd "$(dirname "$0")/.." 
 export PATH="$HOME/.local/bin:$PATH"
 export HERMES_COMIC_WORKSPACE="$(pwd)/workspaces/neon-and-ash"
 
