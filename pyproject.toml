@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-comic"
+version = "0.1.0"
+description = "AI comic series companion — persistent world, characters, and self-improving style card"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "eren-karakus0" }]
+
+dependencies = [
+    "hermes-agent @ git+https://github.com/NousResearch/hermes-agent.git@v2026.4.16",
+    "httpx>=0.27",
+    "click>=8.1",
+    "Pillow>=10",
+    "python-dotenv>=1.0",
+    "tenacity>=8",
+    "fal-client>=0.5",
+    "rich>=13",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.5",
+]
+
+[project.scripts]
+comic = "hermes_comic.cli:main"
+
+[tool.uv]
+package = true
+
+[tool.setuptools.packages.find]
+include = ["hermes_comic*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
