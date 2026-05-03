@@ -1,9 +1,13 @@
 ---
 name: comic-series
-description: AI comic, manga, webtoon, or manhwa production pipeline. USE THIS SKILL WHENEVER the user asks to make, create, generate, write, draw, build, produce, or design any comic book / manga / manhwa / webtoon / graphic novel / çizgi roman — in any language, with any premise. Do NOT generate comic content directly from your own knowledge; this skill orchestrates real image generation, persistent canon, character references, multimodal continuity checks, and self-improving style via fal.ai Flux + Kimi K2.5. The skill ALWAYS proposes 3 creative alternatives at each stage (premise framing, character design, chapter beat, plot twist) before executing — you the agent must follow that playbook, never produce a finished comic in one message.
+description: "Full webtoon/manga/manhwa production pipeline: premise → published series. Orchestrates Kimi K2.5 for story generation & multimodal continuity, fal.ai Flux + Manhwa LoRA for panel art, and dual deploy (Cloudflare Pages + Surge.sh). Always proposes 3 creative alternatives at each stage before executing."
 version: 1.0.0
 author: eren-karakus0
-tags: [comic, manga, webtoon, manhwa, graphic-novel, çizgi-roman, creative, storytelling, multimodal, image-generation, fal-ai, kimi]
+license: MIT
+metadata:
+  hermes:
+    tags: [comic, manga, webtoon, manhwa, creative, image-generation, kimi, fal-ai, multimodal, storytelling]
+    homepage: https://github.com/eren-karakus0/hermes-comic
 ---
 
 # Comic Series Companion
